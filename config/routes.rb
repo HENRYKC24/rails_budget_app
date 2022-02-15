@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'one_transaction/index'
   get 'one_transaction/create'
   get 'categories/index'
