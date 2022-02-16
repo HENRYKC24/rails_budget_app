@@ -1,5 +1,7 @@
 class CategoriesController < ApplicationController
-  def index; end
+  def index
+    @categories = current_user.groups
+  end
 
   def show; end
 
