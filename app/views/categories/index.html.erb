@@ -2,5 +2,7 @@
 <p>Find me in app/views/categories/index.html.erb</p>
 
 <% @categories.each do |cat|  %>
-  <p><%= cat %></p>
+  <p><%= cat.id %></p>
 <% end %>
+
+ <button><%= link_to "add a new category", user_categories_path, method: :post  %></button>
