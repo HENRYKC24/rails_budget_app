@@ -7,12 +7,11 @@ class CategoriesController < ApplicationController
 
   def new
     @category = Group.new
+    @groups = current_user.groups
   end
 
   def create
     uploaded_file = params[:group][:icon]
-
-    # puts uploaded_file.content_type[0, 5] === 'image', '^^^^'
 
     @cat = nil
     if uploaded_file.content_type[0, 5] == 'image'

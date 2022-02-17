@@ -14,7 +14,7 @@
   </div>
   
   <div>
-    <%= form.select :group, @groups, :required => true %>
+    <%= form.select :group, @current_user.groups.map { |group| group.name}, :required => true %>
   </div>
 
   <div>
