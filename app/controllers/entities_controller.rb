@@ -5,7 +5,7 @@ class EntitiesController < ApplicationController
     @entity_ids = @entity_groups.map(&:entity_id)
     @group_entities = @entities.select { |entity| @entity_ids.include? entity.id }
     @total = 0
-    @group_entities.each {|each| @total += each.amount}
+    @group_entities.each { |each| @total += each.amount }
   end
 
   def new
@@ -16,10 +16,10 @@ class EntitiesController < ApplicationController
   def create
     @entity = Entity.new(name: params[:name], amount: params[:amount].to_i, user_id: current_user.id)
     if @entity.save
-      @group = current_user.groups.select { |group| group.name == params[:group]}
+      @group = current_user.groups.select { |group| group.name == params[:group] }
       Entitygroup.create(entity_id: @entity.id, group_id: @group[0].id)
     end
-    
+
     render :new
   end
 end
