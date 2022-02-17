@@ -19,6 +19,8 @@ gem 'turbolinks', '~> 5'
 gem 'devise'
 gem 'jbuilder', '~> 2.7'
 gem 'rubocop', '>= 1.0', '< 2.0'
+gem 'cancancan', '~> 1.9'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password

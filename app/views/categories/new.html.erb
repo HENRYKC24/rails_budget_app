@@ -1,7 +1,7 @@
 <h1>Categories#create</h1>
 <p>Find me in app/views/categories/create.html.erb</p>
 
-<%= form_with url: user_categories_path, method: :post, scope: :post, local: true do |form| %>
+<%= form_with model: @category, url: user_categories_path, multipart: true do |form| %>
   <div >
     <%= form.label :title, "Category name" %>
     <%= form.text_field :name, placeholder: "Name", required: true %>
