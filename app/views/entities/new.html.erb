@@ -1,0 +1,24 @@
+<h1>OneTransaction#create</h1>
+<p>Find me in app/views/one_transaction/create.html.erb</p>
+
+
+<%= form_with model: @category, url: user_category_entities_path, method: :post do |form| %>
+  <div >
+    <%= form.label :title, "Transaction name" %>
+    <%= form.text_field :name, placeholder: "Name", required: true %>
+  </div>
+
+  <div >
+    <%= form.label :title, "Transaction amount" %>
+    <%= form.number_field :amount, placeholder: "Amount", required: true %>
+  </div>
+  
+  <div>
+    <%= form.select :group, @groups, :required => true %>
+  </div>
+
+  <div>
+    <%= form.submit "Add Category", class: "btn btn-primary", disable_with: "Please wait..." %>
+  </div>
+<% end %>
+

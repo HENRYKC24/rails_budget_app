@@ -2,5 +2,15 @@
 <p>Find me in app/views/categories/index.html.erb</p>
 
 <% @categories.each do |cat|  %>
-  <p><%= cat %></p>
+  <%= link_to user_category_entities_path(:category_id => cat.id) do %>
+    <div>
+      <p><%= cat.name %></p>
+      <%= image_tag "#{cat.icon}", :class => "avatar" %>
+      <br >
+      <br >
+      <br >
+    </div>
+  <% end %>
 <% end %>
+
+ <button><%= link_to "add a new category", new_user_category_path  %></button>

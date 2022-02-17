@@ -11,8 +11,8 @@ Rails.application.routes.draw do
   root 'users#index'
 
   resources :users, only: [:index] do
-    resources :categories, only: [:index, :show, :create] do
-      resources :one_transaction, only: [:create, :destroy]
+    resources :categories, only: [:index, :show, :new, :create] do
+      resources :entities, only: [ :index, :new, :create]
     end
   end
 
