@@ -8,5 +8,4 @@ RSpec.describe Entity, type: :model do
 
     expect(@entity).to be_valid
   end
-
 end
