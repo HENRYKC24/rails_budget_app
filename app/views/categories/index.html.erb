@@ -1,16 +1,23 @@
-<h1>Categories#index</h1>
-<p>Find me in app/views/categories/index.html.erb</p>
 
-<% @categories.each do |cat|  %>
-  <%= link_to user_category_entities_path(:category_id => cat.id) do %>
-    <div>
-      <p><%= cat.name %></p>
-      <%= image_tag "#{cat.icon}", :class => "avatar" %>
-      <br >
-      <br >
-      <br >
-    </div>
+<%= render :partial => 'partials/header', locals: { screen_name: 'Categories' } %>
+<%= render :partial => 'partials/notification' %>
+    
+<h1 class="budgets">Budget Categories</h1>
+<div class="cat-container">
+  <% @categories.each do |cat|  %>
+    <%= link_to user_category_entities_path(:category_id => cat.id), :class => 'cat-item' do %>
+      <div class="cat">
+        <%= image_tag "#{cat.icon}", :class => "avatar" %>
+        <p class="cat-name"><%= cat.name %></p>
+        <div class="time">
+          <p class="cat-item"><%= cat.created_at.to_s[0, 10] %></p>
+          <p class="cat-item"><%= cat.created_at.to_s[11..19] %></p>
+        </div>
+      </div>
+    <% end %>
   <% end %>
-<% end %>
+</div>
 
- <button><%= link_to "add a new category", new_user_category_path  %></button>
+ <div class="btn-container">
+ <button class="btn btn-primary btn-center"><%= link_to "Add a new category", new_user_category_path, :class => 'primary-inner' %></button>
+ </div>

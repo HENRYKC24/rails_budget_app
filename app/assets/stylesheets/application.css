@@ -13,3 +13,182 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: #f1f3f2;
+  padding-bottom: 20px;
+  min-height: 100vh;
+}
+
+.nav-signup {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.app-intro {
+  padding-bottom: 100px;
+}
+
+.app-name {
+  color: #17075c;
+  text-align: center;
+}
+
+.alert {
+  margin-left: -13px;
+}
+
+.splash-container {
+  text-align: center;
+}
+
+.splash-login,
+.splash-logout {
+  background-color: #60b625;
+}
+
+.splash-login-text,
+.splash-logout-text {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.signup {
+  text-align: center;
+}
+
+.signup-button,
+.login-btn {
+  background-color: #60b625;
+  color: white;
+  font-size: 20px;
+  margin-top: 50px;
+  display: block;
+  width: 100%;
+  border: none;
+  height: 30px;
+}
+
+.login-header {
+  color: #8b98a5;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.field {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.inner-box {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.input {
+  width: 100%;
+}
+
+.screen-name {
+  color: white;
+  margin-right: -70px;
+}
+
+.budgets {
+  text-align: center;
+}
+
+.navbar-toggler {
+  border-color: red;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cat-container {
+  padding: 10px;
+  text-align: center;
+}
+
+.cat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 5px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-inner {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.btn-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.avatar {
+  width: 90px;
+}
+
+#nav-bar {
+  background-color: #3676be;
+}
+
+.fa-arrow-left {
+  position: relative;
+  color: white;
+  top: -40px;
+  left: -10px;
+  z-index: 10;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.cat-name {
+  font-size: 1.5rem;
+}
+
+.cat-item {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  margin-bottom: -3px;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wrapper {
+  margin: 0 10px;
+}
+
+.trans-name {
+  text-align: center;
+  margin-bottom: 30px;
+}

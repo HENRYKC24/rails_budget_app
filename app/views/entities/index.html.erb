@@ -1,9 +1,33 @@
-<h1>OneTransaction#index</h1>
-<p>Find me in app/views/one_transaction/index.html.erb</p>
-<p><%= @total %></p>
-<% @group_entities.each do |entity|  %>
-  <p><%= entity.name %></p>
-  <p><%= entity.amount %></p>
+<%= render :partial => 'partials/header', locals: { screen_name: 'Transaction' } %>
+<%= render :partial => 'partials/notification' %>
+<%= link_to user_categories_path do %>
+  <i class="fa fa-arrow-left" aria-hidden="true"></i>
 <% end %>
+<div class="wrapper">
+  <h2 class="trans-name"><%= @group.name %> Transaction</h2>
 
-<button><%= link_to "add a new transaction", new_user_category_entity_path %></button>
+  <div class="t-wrapper">
+    <div class="line">
+      <h5>Item</h5>
+      <h5>Budget</h5>
+    </div>
+
+    <hr >
+
+    <% @group_entities.each do |entity|  %>
+      <div class="line">
+        <p><%= entity.name %></p>
+        <p>$<%= entity.amount %></p>
+      </div>
+    <% end %>
+      <hr >
+      <div class="line">
+        <p>Total Budget</p>
+        <p>$<%= @total %></p>
+      </div>
+  </div>
+
+  <div class="btn-container">
+    <button class="btn btn-primary btn-center"><%= link_to "add a new transaction", new_user_category_entity_path, :class => 'primary-inner'  %></button>
+  </div>
+</div>
