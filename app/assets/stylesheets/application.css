@@ -40,10 +40,35 @@
   text-align: center;
 }
 
-.signup-button {
+.signup-button,
+.login-btn {
   background-color: #60b625;
   color: white;
   font-size: 20px;
   margin-top: 50px;
+  display: block;
+  width: 100%;
   border: none;
+  height: 30px;
+}
+
+.login-header {
+  color: #8b98a5;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.field {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.inner-box {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.input {
+  width: 100%;
 }
