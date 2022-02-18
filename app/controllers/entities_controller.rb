@@ -20,8 +20,8 @@ class EntitiesController < ApplicationController
       @group = current_user.groups.select { |group| group.name == params[:group] }
       Entitygroup.create(entity_id: @entity.id, group_id: @group[0].id)
       redirect_to user_categories_path, notice: 'transaction added successfully'
+    else
+      render :new
     end
-
-    render :new
   end
 end

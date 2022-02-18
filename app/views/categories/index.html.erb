@@ -3,12 +3,18 @@
 <%= render :partial => 'partials/notification' %>
     
 <h1 class="budgets">Budget Categories</h1>
+
 <div class="cat-container">
   <% @categories.each do |cat|  %>
     <%= link_to user_category_entities_path(:category_id => cat.id), :class => 'cat-item' do %>
       <div class="cat">
         <%= image_tag "#{cat.icon}", :class => "avatar" %>
-        <p class="cat-name"><%= cat.name %></p>
+        
+        <div class="time">
+          <p class="cat-name"><%= cat.name %></p>
+          <p class="cat-total"><%= cat.total_transaction %></p>
+        </div>
+        
         <div class="time">
           <p class="cat-item"><%= cat.created_at.to_s[0, 10] %></p>
           <p class="cat-item"><%= cat.created_at.to_s[11..19] %></p>

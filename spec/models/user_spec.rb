@@ -6,27 +6,27 @@ RSpec.describe User, type: :model do
   end
 
   it 'Valid if name is present' do
-    @user = User.new(name: 'Henry', email: 'henry@yahoo.com', password: 'kkkkkk')
+    @user = User.new(name: 'Henry', email: 'henry@yahoo.com', password: 'kkkkkk', confirmed_at: Time.now)
     expect(@user).to be_valid
   end
 
   it 'It is invalid omitting the email attribute' do
-    @user = User.create(name: 'Kc', password: 'kkkkkk')
+    @user = User.create(name: 'Kc', password: 'kkkkkk', confirmed_at: Time.now)
     expect(@user).to_not be_valid
   end
 
   it 'Valid if email is present' do
-    @user = User.new(name: 'Kelechukwu', email: 'kc@gmail.com', password: 'kkkkkk')
+    @user = User.new(name: 'Kelechukwu', email: 'kc@gmail.com', password: 'kkkkkk', confirmed_at: Time.now)
     expect(@user).to be_valid
   end
 
   it 'It is invalid omitting the password attribute' do
-    @user = User.create(name: 'Henry', email: 'henry@gmail.com')
+    @user = User.create(name: 'Henry', email: 'henry@gmail.com', confirmed_at: Time.now)
     expect(@user).to_not be_valid
   end
 
   it 'Valid if password is present' do
-    @user = User.new(name: 'Henry Kc', email: 'hkc@gmail.com', password: 'kkkkkk')
+    @user = User.new(name: 'Henry Kc', email: 'hkc@gmail.com', password: 'kkkkkk', confirmed_at: Time.now)
     expect(@user).to be_valid
   end
 end

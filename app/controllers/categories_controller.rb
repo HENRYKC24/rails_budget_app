@@ -1,6 +1,12 @@
 class CategoriesController < ApplicationController
   def index
     @categories = current_user.groups
+
+    # @entities = Entity.all
+    # @entity_ids = @entity_groups.map(&:entity_id)
+    # @group_entities = @entities.select { |entity| @entity_ids.include? entity.id }
+    # @total = 0
+    # @group_entities.each { |each| @total += each.amount }
   end
 
   def show; end
