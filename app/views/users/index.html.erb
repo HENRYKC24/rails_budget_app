@@ -1,4 +1,5 @@
-
-<h1>Budget App</h1>
-<p><%= link_to "Login", new_user_session_path %></p>
-<p><%= link_to "Sign Up", new_user_registration_path %></p>
+<div class="splash-container">
+  <h1 class='app-header'>Budget App</h1>
+  <p class='splash-login'><%= link_to "Login", new_user_session_path,  :class => "splash-login-text" %></p>
+  <p class='splash-logout'><%= link_to "Sign Up", new_user_registration_path, :class => "splash-logout-text" %></p>
+</div>

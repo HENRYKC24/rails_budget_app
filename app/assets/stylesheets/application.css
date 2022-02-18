@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+.app-header {
+  color: #8b98a5;
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+
+.splash-container {
+  text-align: center;
+}
+
+.splash-login,
+.splash-logout {
+  background-color: #60b625;
+}
+
+.splash-login-text,
+.splash-logout-text {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+}
