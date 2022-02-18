@@ -1,18 +1,30 @@
 require 'rails_helper'
 
-RSpec.describe 'Login features', js: true do
-  it 'Test username & password inputs and the "Submit" button.' do
-    visit('/users/sign_in')
-    expect(page).to have_field('Email', type: 'email')
-    expect(page).to have_field('Password', type: 'password')
-    expect(page).to have_button('Log in', type: 'submit')
+RSpec.describe 'Login page', js: true, type: :feature do
+  describe 'Login Page requirements' do
+    it 'has username and password inputs, and Log in button' do
+      visit new_user_session_path
+      expect(page).to have_field('user_email')
+      expect(page).to have_field('user_password')
+      expect(page).to have_button('Log in')
+    end
   end
 
-  it 'Should redirected to the root page when clicking submit button with correct data' do
-    visit('/users/sign_in')
-    fill_in('Email', with: 'ali@mail.com')
-    fill_in('Password', with: '123456')
-    click_button('Log in')
-    expect(current_path).to have_content('/')
+  describe 'When the submit button is clicked' do
+    it 'submits with out username and password inputs' do
+      visit new_user_session_path
+      fill_in 'user_email', with: ''
+      fill_in 'user_password', with: ''
+      click_button 'Log in'
+      expect(page).to have_content('Sign up')
+    end
+
+    it 'has incorrect username and password' do
+      visit new_user_session_path
+      fill_in 'user_email', with: 'sam@gmail.com'
+      fill_in 'user_password', with: '0000'
+      click_button 'Log in'
+      expect(page).to have_content('Forgot your password')
+    end
   end
 end
