@@ -20,6 +20,12 @@ body {
   box-sizing: border-box;
 }
 
+.main {
+  background-color: #f1f3f2;
+  padding-bottom: 20px;
+  min-height: 100vh;
+}
+
 .nav-signup {
   background-color: transparent;
   border: none;
@@ -111,6 +117,8 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  background-color: white;
+  padding: 5px;
 }
 
 .time {
@@ -128,11 +136,23 @@ body {
 
 .btn-container {
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .avatar {
   width: 90px;
+}
+
+#nav-bar {
+  background-color: #3676be;
+}
+
+.fa-arrow-left {
+  color: white;
+}
+
+.navbar-toggler-icon {
+  color: white;
 }
 
 .cat-name {
