@@ -1,38 +1,34 @@
 require 'rails_helper'
 
-RSpec.feature 'Entities', type: :feature do
+RSpec.feature 'Group index', type: :feature do
   background do
     visit new_user_session_path
 
-    @user = User.create(name: 'Henry', email: '1@4.com', password: 'kkkkkk')
-    @group = Group.create(name: 'Mukimo', icon: 'ppp.png', user: @user)
-    @entity = @group.entities.create(name: 'Block', amount: 123, user: @user)
-
+    @user = User.create(name: 'henry', email: 'henry@mail.com', password: '123456')
+    @group = Group.create(user_id: @user.id, name: 'Travel', icon: 'profile.jpg')
+    @entity = Entity.create(name: 'India', amount: 1500, user_id: @user.id)
     fill_in 'Email', with: @user.email
     fill_in 'Password', with: @user.password
 
     click_button 'Log in'
-    visit groups_path
-    click_link @group.name
+    visit user_category_entities_path(@user.id, @group.id)
   end
 
-  scenario 'show group\'s name on page' do
+  scenario 'display My Groups on page' do
+    expect(page).to have_content('Transaction')
+    expect(page).to have_content('Total Budget')
+  end
+
+  scenario 'display Group details on page' do
     expect(page).to have_content @group.name
   end
 
-  scenario 'show the transaction\'s amount on page' do
-    expect(page).to have_content @entity.amount
+  scenario 'display Add New transaction button on page' do
+    expect(page).to have_button 'add a new transaction'
   end
 
-  scenario 'show the transaction\'s name on page' do
-    expect(page).to have_content @entity.name
-  end
-
-  scenario 'Should display TRANSACTIONS title' do
-    expect(page).to have_content 'TRANSACTIONS'
-  end
-
-  scenario 'Should display add a new transaction link' do
-    expect(page).to have_link 'add a new transaction'
+  scenario 'When I click on add a new transaction, I am redirected to that Transaction\'s page.' do
+    click_link('add a new transaction')
+    expect(page).to have_current_path new_user_category_entity_path(@user.id, @group.id)
   end
 end
