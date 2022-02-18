@@ -1,5 +1,6 @@
 class EntitiesController < ApplicationController
   def index
+    @group = Group.find(params[:category_id])
     @entities = Entity.all
     @entity_groups = Group.find(params[:category_id]).entitygroups
     @entity_ids = @entity_groups.map(&:entity_id)

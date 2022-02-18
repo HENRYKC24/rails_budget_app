@@ -1,6 +1,6 @@
-<h1>OneTransaction#create</h1>
-<p>Find me in app/views/one_transaction/create.html.erb</p>
-
+<%= render :partial => 'partials/header', locals: { screen_name: 'Add Transaction' } %>
+<%= render :partial => 'partials/notification' %>
+<h1>Let's add a transaction</h1>
 
 <%= form_with model: @category, url: user_category_entities_path, method: :post do |form| %>
   <div >

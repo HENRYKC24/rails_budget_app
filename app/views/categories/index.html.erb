@@ -1,15 +1,18 @@
 
-<h1>Budget Categories</h1>
-<% @categories.each do |cat|  %>
-  <%= link_to user_category_entities_path(:category_id => cat.id) do %>
-    <div>
-      <p><%= cat.name %></p>
-      <%= image_tag "#{cat.icon}", :class => "avatar" %>
-      <br >
-      <br >
-      <br >
-    </div>
+<%= render :partial => 'partials/header', locals: { screen_name: 'Categories' } %>
+<%= render :partial => 'partials/notification' %>
+    
+<h1 class=">Budget Categories</h1>
+<div class="cat-container">
+  <% @categories.each do |cat|  %>
+    <%= link_to user_category_entities_path(:category_id => cat.id) do %>
+      <div class="cat">
+        <%= image_tag "#{cat.icon}", :class => "avatar" %>
+        <p><%= cat.name %></p>
+        <p><%= cat.created_at.to_s[0, 20] %></p>
+      </div>
+    <% end %>
   <% end %>
-<% end %>
+</div>
 
  <button><%= link_to "add a new category", new_user_category_path  %></button>

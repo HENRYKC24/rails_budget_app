@@ -1,6 +1,9 @@
-<h1>OneTransaction#index</h1>
-<p>Find me in app/views/one_transaction/index.html.erb</p>
-<p><%= @total %></p>
+<%= render :partial => 'partials/header', locals: { screen_name: 'Transactions' } %>
+<%= render :partial => 'partials/notification' %>
+
+<h2><%= @group.name %> Category</h2>
+
+<p>Total Amount: <%= @total %></p>
 <% @group_entities.each do |entity|  %>
   <p><%= entity.name %></p>
   <p><%= entity.amount %></p>

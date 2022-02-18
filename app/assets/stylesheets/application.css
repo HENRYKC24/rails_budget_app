@@ -20,10 +20,23 @@ body {
   box-sizing: border-box;
 }
 
-.app-header {
-  color: #8b98a5;
-  font-size: 40px;
-  margin-bottom: 100px;
+.nav-signup {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.app-intro {
+  padding-bottom: 100px;
+}
+
+.app-name {
+  color: #17075c;
+  text-align: center;
+}
+
+.alert {
+  margin-left: -13px;
 }
 
 .splash-container {
@@ -39,7 +52,7 @@ body {
 .splash-logout-text {
   text-decoration: none;
   color: white;
-  font-size: 40px;
+  font-size: 20px;
 }
 
 .signup {
@@ -77,4 +90,24 @@ body {
 
 .input {
   width: 100%;
+}
+
+.screen-name {
+  color: white;
+}
+
+.cat-container {
+  padding: 10px;
+}
+
+.cat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.avatar {
+  width: 70px;
 }
