@@ -35,3 +35,15 @@
   color: white;
   font-size: 40px;
 }
+
+.signup {
+  text-align: center;
+}
+
+.signup-button {
+  background-color: #60b625;
+  color: white;
+  font-size: 20px;
+  margin-top: 50px;
+  border: none;
+}
