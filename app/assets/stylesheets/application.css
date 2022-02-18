@@ -97,7 +97,8 @@ body {
 }
 
 .cat-container {
-  padding: 10px;
+  padding: 50px;
+  text-align: center;
 }
 
 .cat {
@@ -105,9 +106,38 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 15px 0;
+  margin: 15px 7px;
 }
+
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-inner {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+/* .btn-center {
+  display: block;
+  width: 100px;
+  margin: 0 50px;
+} */
 
 .avatar {
   width: 70px;
+}
+
+.cat-item {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
