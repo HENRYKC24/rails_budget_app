@@ -1,5 +1,7 @@
 <%= render :partial => 'partials/header', locals: { screen_name: 'Add Transaction' } %>
 <%= render :partial => 'partials/notification' %>
+<a href="javascript:history.back()"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+  
 
 <div class="signup">
   <div class='inner-box'>
@@ -17,6 +19,7 @@
       </div>
       
       <div class="field">
+        <%= form.label :title, "Budget category" %>
         <%= form.select :group, @current_user.groups.map { |group| group.name}, :required => true, :class => 'input' %>
       </div>
 

@@ -1,6 +1,8 @@
 <%= render :partial => 'partials/header', locals: { screen_name: 'Add Category' } %>
 <%= render :partial => 'partials/notification' %>
-
+<%= link_to user_categories_path do %>
+  <i class="fa fa-arrow-left" aria-hidden="true"></i>
+<% end %>
 
 <div class="signup">
   <div class='inner-box'>

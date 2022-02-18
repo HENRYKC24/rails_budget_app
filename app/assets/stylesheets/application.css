@@ -100,10 +100,18 @@ body {
 
 .screen-name {
   color: white;
+  margin-right: -70px;
 }
 
 .budgets {
   text-align: center;
+}
+
+.navbar-toggler {
+  border-color: red;
+  outline: none;
+  margin: 0;
+  padding: 0;
 }
 
 .cat-container {
@@ -148,7 +156,11 @@ body {
 }
 
 .fa-arrow-left {
+  position: relative;
   color: white;
+  top: -40px;
+  left: -10px;
+  z-index: 10;
 }
 
 .navbar-toggler-icon {
