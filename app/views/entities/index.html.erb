@@ -3,10 +3,12 @@
 
 <h2><%= @group.name %> Category</h2>
 
-<p>Total Amount: <%= @total %></p>
+<p>Total Budget: $<%= @total %></p>
 <% @group_entities.each do |entity|  %>
   <p><%= entity.name %></p>
   <p><%= entity.amount %></p>
 <% end %>
 
-<button><%= link_to "add a new transaction", new_user_category_entity_path %></button>
+<div class="btn-container">
+<button class="btn btn-primary btn-center"><%= link_to "add a new transaction", new_user_category_entity_path, :class => 'primary-inner'  %></button>
+ </div>

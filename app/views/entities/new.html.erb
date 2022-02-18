@@ -1,24 +1,33 @@
 <%= render :partial => 'partials/header', locals: { screen_name: 'Add Transaction' } %>
 <%= render :partial => 'partials/notification' %>
-<h1>Let's add a transaction</h1>
 
-<%= form_with model: @category, url: user_category_entities_path, method: :post do |form| %>
-  <div >
+
+
+<div class="signup">
+  <div class='inner-box'>
+  <h1>Let's add a transaction</h1>
+
+  <%= form_with model: @category, url: user_category_entities_path, method: :post do |form| %>
+    <div class="field">
     <%= form.label :title, "Transaction name" %>
-    <%= form.text_field :name, placeholder: "Name", required: true %>
+    <%= form.text_field :name, placeholder: "Name", required: true, :class => 'input' %>
   </div>
 
-  <div >
+  <div class="field">
     <%= form.label :title, "Transaction amount" %>
-    <%= form.number_field :amount, placeholder: "Amount", required: true %>
+    <%= form.number_field :amount, placeholder: "Amount", required: true, :class => 'input' %>
   </div>
   
-  <div>
-    <%= form.select :group, @current_user.groups.map { |group| group.name}, :required => true %>
+  <div class="field">
+    <%= form.select :group, @current_user.groups.map { |group| group.name}, :required => true, :class => 'input' %>
   </div>
 
-  <div>
+  <div class="field">
     <%= form.submit "Add Category", class: "btn btn-primary", disable_with: "Please wait..." %>
   </div>
-<% end %>
+  <% end %>
+  </div>
+
+</div>
+
 
