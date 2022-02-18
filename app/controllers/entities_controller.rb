@@ -22,6 +22,6 @@ class EntitiesController < ApplicationController
       redirect_to user_categories_path, notice: 'transaction added successfully'
     end
 
-    # re-direct
+    render :new
   end
 end
