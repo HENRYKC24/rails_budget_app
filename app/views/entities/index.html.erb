@@ -1,14 +1,31 @@
-<%= render :partial => 'partials/header', locals: { screen_name: 'Transactions' } %>
+<%= render :partial => 'partials/header', locals: { screen_name: 'Transaction' } %>
 <%= render :partial => 'partials/notification' %>
 
-<h2><%= @group.name %> Category</h2>
+<div class="wrapper">
+  <h2 class="trans-name"><%= @group.name %> Transaction</h2>
 
-<p>Total Budget: $<%= @total %></p>
-<% @group_entities.each do |entity|  %>
-  <p><%= entity.name %></p>
-  <p><%= entity.amount %></p>
-<% end %>
+  <div class="t-wrapper">
+    <div class="line">
+      <h5>Item</h5>
+      <h5>Budget</h5>
+    </div>
 
-<div class="btn-container">
-<button class="btn btn-primary btn-center"><%= link_to "add a new transaction", new_user_category_entity_path, :class => 'primary-inner'  %></button>
- </div>
+    <hr >
+
+    <% @group_entities.each do |entity|  %>
+      <div class="line">
+        <p><%= entity.name %></p>
+        <p>$<%= entity.amount %></p>
+      </div>
+    <% end %>
+      <hr >
+      <div class="line">
+        <p>Total Budget</p>
+        <p>$<%= @total %></p>
+      </div>
+  </div>
+
+  <div class="btn-container">
+    <button class="btn btn-primary btn-center"><%= link_to "add a new transaction", new_user_category_entity_path, :class => 'primary-inner'  %></button>
+  </div>
+</div>

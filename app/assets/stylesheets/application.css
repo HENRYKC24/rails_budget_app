@@ -96,8 +96,12 @@ body {
   color: white;
 }
 
+.budgets {
+  text-align: center;
+}
+
 .cat-container {
-  padding: 50px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -106,7 +110,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 15px 7px;
+  margin-bottom: 20px;
 }
 
 .time {
@@ -124,20 +128,35 @@ body {
 
 .btn-container {
   text-align: center;
+  margin-top: 20px;
 }
 
-/* .btn-center {
-  display: block;
-  width: 100px;
-  margin: 0 50px;
-} */
-
 .avatar {
-  width: 70px;
+  width: 90px;
+}
+
+.cat-name {
+  font-size: 1.5rem;
 }
 
 .cat-item {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
+  margin-bottom: -3px;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wrapper {
+  margin: 0 10px;
+}
+
+.trans-name {
+  text-align: center;
+  margin-bottom: 30px;
 }
