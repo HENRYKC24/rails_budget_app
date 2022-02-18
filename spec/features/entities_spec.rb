@@ -4,7 +4,7 @@ RSpec.feature 'Group index', type: :feature do
   background do
     visit new_user_session_path
 
-    @user = User.create(name: 'henry', email: 'henry@mail.com', password: '123456')
+    @user = User.create(name: 'henry', email: 'henry@mail.com', password: '123456',confirmed_at: Time.now)
     @group = Group.create(user_id: @user.id, name: 'Travel', icon: 'profile.jpg')
     @entity = Entity.create(name: 'India', amount: 1500, user_id: @user.id)
     fill_in 'Email', with: @user.email
