@@ -948,7 +948,7 @@
   dependencies:
     "pako" "~1.0.5"
 
-"browserslist@^4.0.0", "browserslist@^4.19.1", "browserslist@^4.19.2", "browserslist@^4.6.4":
+"browserslist@^4.0.0", "browserslist@^4.12.0", "browserslist@^4.17.5", "browserslist@^4.19.1", "browserslist@^4.19.2", "browserslist@^4.6.4":
   "integrity" "sha512-97XU1CTZ5TwU9Qy/Taj+RtiI6SQM1WIhZ9osT7EY0oO2aWXGABZT2OZeRL+6PfaQsiiMIjjwIoYFPq4APgspgQ=="
   "version" "4.19.2"
   dependencies:
@@ -956,28 +956,6 @@
     "electron-to-chromium" "^1.4.71"
     "escalade" "^3.1.1"
     "node-releases" "^2.0.2"
-    "picocolors" "^1.0.0"
-
-"browserslist@^4.12.0":
-  "integrity" "sha512-u2tbbG5PdKRTUoctO3NBD8FQ5HdPh1ZXPHzp1rwaa5jTc+RV9/+RlWiAIKmjRPQF+xbGM9Kklj5bZQFa2s/38A=="
-  "resolved" "https://registry.npmjs.org/browserslist/-/browserslist-4.19.1.tgz"
-  "version" "4.19.1"
-  dependencies:
-    "caniuse-lite" "^1.0.30001286"
-    "electron-to-chromium" "^1.4.17"
-    "escalade" "^3.1.1"
-    "node-releases" "^2.0.1"
-    "picocolors" "^1.0.0"
-
-"browserslist@^4.17.5":
-  "integrity" "sha512-u2tbbG5PdKRTUoctO3NBD8FQ5HdPh1ZXPHzp1rwaa5jTc+RV9/+RlWiAIKmjRPQF+xbGM9Kklj5bZQFa2s/38A=="
-  "resolved" "https://registry.npmjs.org/browserslist/-/browserslist-4.19.1.tgz"
-  "version" "4.19.1"
-  dependencies:
-    "caniuse-lite" "^1.0.30001286"
-    "electron-to-chromium" "^1.4.17"
-    "escalade" "^3.1.1"
-    "node-releases" "^2.0.1"
     "picocolors" "^1.0.0"
 
 "buffer-from@^1.0.0", "buffer-from@^1.1.2":
@@ -1120,7 +1098,7 @@
     "lodash.memoize" "^4.1.2"
     "lodash.uniq" "^4.5.0"
 
-"caniuse-lite@^1.0.0", "caniuse-lite@^1.0.30000981", "caniuse-lite@^1.0.30001109", "caniuse-lite@^1.0.30001286", "caniuse-lite@^1.0.30001312":
+"caniuse-lite@^1.0.0", "caniuse-lite@^1.0.30000981", "caniuse-lite@^1.0.30001109", "caniuse-lite@^1.0.30001312":
   "integrity" "sha512-Wiz1Psk2MEK0pX3rUzWaunLTZzqS2JYZFzNKqAiJGiuxIjRPLgV6+VDPOg6lQOUxmDwhTlh198JsTTi8Hzw6aQ=="
   "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001312.tgz"
   "version" "1.0.30001312"
@@ -1848,11 +1826,6 @@
     "inherits" "^2.0.1"
     "readable-stream" "^2.0.0"
     "stream-shift" "^1.0.0"
-
-"electron-to-chromium@^1.4.17":
-  "integrity" "sha512-cId+QwWrV8R1UawO6b9BR1hnkJ4EJPCPAr4h315vliHUtVUJDk39Sg1PMNnaWKfj5x+93ssjeJ9LKL6r8LaMiA=="
-  "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.68.tgz"
-  "version" "1.4.68"
 
 "electron-to-chromium@^1.4.71":
   "integrity" "sha512-Hk61vXXKRb2cd3znPE9F+2pLWdIOmP7GjiTj45y6L3W/lO+hSnUSUhq+6lEaERWBdZOHbk2s3YV5c9xVl3boVw=="
@@ -3636,7 +3609,7 @@
     "util" "^0.11.0"
     "vm-browserify" "^1.0.1"
 
-"node-releases@^2.0.1", "node-releases@^2.0.2":
+"node-releases@^2.0.2":
   "integrity" "sha512-XxYDdcQ6eKqp/YjI+tb2C5WM2LgjnZrfYg4vgQt49EK268b6gYCHsBLrK2qvJo4FmCtqmKezb0WZFK4fkrZNsg=="
   "resolved" "https://registry.npmjs.org/node-releases/-/node-releases-2.0.2.tgz"
   "version" "2.0.2"
