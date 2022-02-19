@@ -17,8 +17,8 @@
         </div>
 
         <div class="time">
-          <p class="cat-item"><%= cat.created_at.to_s[0, 10] %></p>
-          <p class="cat-item"><%= cat.created_at.to_s[11..19] %></p>
+          <p class="cat-item"><%= cat.created_at.localtime.to_s[0, 10] %></p>
+          <p class="cat-item"><%= cat.created_at.localtime.to_s[11..19] %></p>
         </div>
       </div>
     <% end %>
