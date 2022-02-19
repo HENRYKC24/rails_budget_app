@@ -14,7 +14,7 @@
 
     <hr >
 
-    <% @group_entities.each do |entity|  %>
+    <% @group_entities.reverse.each do |entity|  %>
       <div class="line">
         <p><%= entity.name %></p>
         <p>$<%= entity.amount.to_s.gsub(/\B(?=(...)*\b)/, ',') %></p>
