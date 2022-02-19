@@ -55,7 +55,7 @@ rails generate rspec:install
 rspec spec
 ```
 
-## [Live demo](https://stormy-wave-95285.herokuapp.com/)
+## [Live demo](https://github.com/HENRYKC24/rails_budget_app)
 ## Author
 
 👤 **Henry Kc**
