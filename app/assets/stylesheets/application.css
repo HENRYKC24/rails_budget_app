@@ -43,11 +43,13 @@ body {
 
 .alert {
   margin-left: -13px;
+  font-size: 1.3rem;
   color: rgb(150, 14, 14);
 }
 
 .notice {
   color: rgb(10, 82, 10);
+  font-size: 1.3rem;
 }
 
 .splash-container {
@@ -165,8 +167,8 @@ body {
 .fa-arrow-left {
   position: relative;
   color: white;
-  top: -40px;
-  left: -10px;
+  top: -70px;
+  left: 10px;
   z-index: 10;
 }
 
@@ -208,4 +210,8 @@ body {
 
 .primary-inner:hover {
   color: black;
+}
+
+.notification-container {
+  text-align: center;
 }
