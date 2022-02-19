@@ -1,0 +1,33 @@
+<%= render :partial => 'partials/header', locals: { screen_name: 'Transaction' } %>
+<%= render :partial => 'partials/notification' %>
+<%= link_to user_categories_path do %>
+  <i class="fa fa-arrow-left" aria-hidden="true"></i>
+<% end %>
+<div class="wrapper">
+  <h2 class="trans-name"><%= @group.name %> Transaction</h2>
+
+  <div class="t-wrapper">
+    <div class="line">
+      <h5>Item</h5>
+      <h5>Budget</h5>
+    </div>
+
+    <hr >
+
+    <% @group_entities.reverse.each do |entity|  %>
+      <div class="line">
+        <p><%= entity.name %></p>
+        <p>$<%= entity.amount.to_s.gsub(/\B(?=(...)*\b)/, ',') %></p>
+      </div>
+    <% end %>
+      <hr >
+      <div class="line">
+        <h6>Total Budget</h6>
+        <h6>$<%= @total.to_s.gsub(/\B(?=(...)*\b)/, ',') %></h6>
+      </div>
+  </div>
+
+  <div class="btn-container">
+    <button class="btn btn-primary btn-center"><%= link_to "add a new transaction", new_user_category_entity_path, :class => 'primary-inner'  %></button>
+  </div>
+</div>

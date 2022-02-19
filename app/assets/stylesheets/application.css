@@ -13,3 +13,207 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: #f1f3f2;
+  padding-bottom: 20px;
+  min-height: 100vh;
+  max-width: 400px;
+  margin: auto;
+}
+
+.nav-signup {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.app-intro {
+  padding-bottom: 100px;
+}
+
+.app-name {
+  color: #17075c;
+  text-align: center;
+}
+
+.alert {
+  margin-left: -13px;
+  font-size: 1.3rem;
+  color: rgb(150, 14, 14);
+}
+
+.notice {
+  color: rgb(10, 82, 10);
+  font-size: 1.3rem;
+}
+
+.splash-container {
+  text-align: center;
+  width: 80%;
+  margin: 100px auto;
+}
+
+.splash-login,
+.splash-logout {
+  background-color: #60b625;
+}
+
+.splash-login-text,
+.splash-logout-text {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.signup {
+  text-align: center;
+}
+
+.signup-button,
+.login-btn {
+  background-color: #60b625;
+  color: white;
+  font-size: 20px;
+  margin-top: 50px;
+  display: block;
+  width: 100%;
+  border: none;
+  height: 30px;
+}
+
+.login-header {
+  color: #8b98a5;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.field {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.inner-box {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.input {
+  width: 100%;
+}
+
+.screen-name {
+  color: white;
+  margin-right: -70px;
+}
+
+.budgets {
+  text-align: center;
+}
+
+.navbar-toggler {
+  border-color: red;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cat-container {
+  padding: 10px;
+  text-align: center;
+}
+
+.cat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 5px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-inner {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.btn-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.avatar {
+  width: 90px;
+}
+
+#nav-bar {
+  background-color: #3676be;
+}
+
+.fa-arrow-left {
+  position: relative;
+  color: white;
+  top: -70px;
+  left: 10px;
+  z-index: 10;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.cat-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: -5px;
+}
+
+.cat-item {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  margin-bottom: -3px;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.wrapper {
+  margin: 0 10px;
+}
+
+.trans-name {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.primary-inner:hover {
+  color: black;
+}
+
+.notification-container {
+  text-align: center;
+}

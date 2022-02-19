@@ -1,0 +1,24 @@
+<div>
+  <h1 class="app-name">Budget App</h1>
+  <div>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h4 class="text-white">Collapsed content</h4>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark" id="nav-bar">
+        <div class="empty"></div>
+        <h2 class="screen-name"><%= screen_name %></h2>
+        <div>
+          <% if user_signed_in? %> 
+            <%= button_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'nav-signup'  %>
+          <% else %>
+            <%= button_to "Sign in", new_user_session_url, :class => 'nav-signup'  %>
+          <% end %>
+        </div>
+      </nav>
+    </div>
+  </div>
+  </div>
