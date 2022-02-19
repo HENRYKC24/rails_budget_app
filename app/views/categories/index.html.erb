@@ -10,11 +10,12 @@
       <div class="cat">
         <%= image_tag "#{cat.icon}", :class => "avatar" %>
         
-        <div class="time">
+        <div class="time cong">
           <p class="cat-name"><%= cat.name %></p>
-          <p class="cat-total"><%= cat.total_transaction %></p>
+          <p class="cat-tot">Total: $<%= cat.total_transaction.to_s.gsub(/\B(?=(...)*\b)/, ',') %></p>
+       
         </div>
-        
+
         <div class="time">
           <p class="cat-item"><%= cat.created_at.to_s[0, 10] %></p>
           <p class="cat-item"><%= cat.created_at.to_s[11..19] %></p>

@@ -17,13 +17,13 @@
     <% @group_entities.each do |entity|  %>
       <div class="line">
         <p><%= entity.name %></p>
-        <p>$<%= entity.amount %></p>
+        <p>$<%= entity.amount.to_s.gsub(/\B(?=(...)*\b)/, ',') %></p>
       </div>
     <% end %>
       <hr >
       <div class="line">
-        <p>Total Budget</p>
-        <p>$<%= @total %></p>
+        <h6>Total Budget</h6>
+        <h6>$<%= @total.to_s.gsub(/\B(?=(...)*\b)/, ',') %></h6>
       </div>
   </div>
 
