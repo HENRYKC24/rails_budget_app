@@ -1,6 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Budget-app
 The project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+
+## App Screenshots
+![Home](https://screenrec.com/share/M3C1nRtO7u)
+
+![Login](https://screenrec.com/share/c8RihneEqQ)
+
 ## Built With
 Ruby 
 Ruby on Rails
