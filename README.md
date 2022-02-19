@@ -6,7 +6,8 @@ The project is about building a mobile web application where you can manage your
 ![Home](https://user-images.githubusercontent.com/45668340/154793353-37a7724e-f97e-4414-9d7f-50fc47a31501.png)
 ![Login](https://user-images.githubusercontent.com/45668340/154793378-72ceebc0-656d-4b9b-8950-0aa625a4649e.png)
 
-
+## [Live demo](https://kc-budget-app.herokuapp.com/)
+## [Video demo](https://www.loom.com/share/65a0f522f4fa45888c69c78336edd286)
 
 ## Built With
 Ruby 
@@ -54,8 +55,6 @@ rails generate rspec:install
 ```javascript
 rspec spec
 ```
-
-## [Live demo](https://github.com/HENRYKC24/rails_budget_app)
 ## Author
 
 👤 **Henry Kc**
